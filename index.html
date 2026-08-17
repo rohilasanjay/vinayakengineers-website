@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vinayak Engineers & Consultants - Civil Engineering, Quantity Surveying, Billing, BOQ, Estimation, BBS, Planning and Interior Services.">
+<title>Vinayak Engineers & Consultants</title>
+<style>
+:root{--navy:#0a1d2d;--navy2:#102d43;--gold:#e6a23c;--blue:#1769aa;--bg:#f6f8fa;--text:#263746;--muted:#6b7b89;--line:#e5ebf0;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+header{height:76px;background:rgba(10,29,45,.97);color:#fff;position:sticky;top:0;z-index:50;border-bottom:1px solid #ffffff10}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.logo{font-size:22px;font-weight:800;letter-spacing:.2px}.logo small{display:block;font-size:8px;letter-spacing:2px;color:#9fb0bd;margin-top:-3px}.logo span{color:var(--gold)}
+nav{display:flex;align-items:center;gap:28px;font-size:14px}nav a{color:#d8e2e9}nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 21px;border-radius:6px;font-size:14px;font-weight:750;background:var(--gold);color:#151515;border:1px solid var(--gold);transition:.2s}.btn:hover{transform:translateY(-2px)}
+.btn.dark{background:var(--navy);color:#fff;border-color:var(--navy)}.btn.light{background:#fff;color:var(--navy);border-color:#fff}.btn.outline{background:transparent;color:#fff;border-color:#ffffff55}
+.hero{position:relative;overflow:hidden;background:linear-gradient(118deg,#071824 0%,#0c2a42 55%,#124e78 100%);color:#fff;padding:105px 0 95px}
+.hero:after{content:"";position:absolute;width:460px;height:460px;border:1px solid #ffffff12;border-radius:50%;right:-140px;top:-170px;box-shadow:0 0 0 70px #ffffff05,0 0 0 140px #ffffff03}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+.kicker{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--gold);margin-bottom:16px}
+h1{font-size:58px;line-height:1.04;letter-spacing:-1.5px;margin-bottom:22px;max-width:760px}
+.hero p{font-size:18px;line-height:1.75;color:#d2e0ea;max-width:690px;margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-panel{border:1px solid #ffffff20;background:#ffffff0d;backdrop-filter:blur(8px);border-radius:14px;padding:28px}
+.panel-title{font-size:13px;letter-spacing:1.4px;color:#b7c9d5;text-transform:uppercase;margin-bottom:20px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#ffffff1c}
+.stat{background:#102d43;padding:21px}.stat strong{font-size:28px;display:block;color:#fff}.stat span{font-size:12px;color:#b9c9d4}
+section{padding:88px 0}.section-head{max-width:720px;margin:0 auto 45px;text-align:center}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:800;color:var(--blue);text-transform:uppercase;margin-bottom:8px}.section-head h2{font-size:38px;color:var(--navy);line-height:1.15;margin-bottom:12px}.section-head p{color:var(--muted);font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid var(--line);border-radius:10px;padding:27px;background:#fff;transition:.22s}.card:hover{box-shadow:0 16px 40px #0a1d2d12;transform:translateY(-4px);border-color:#d8e2e9}
+.icon{width:44px;height:44px;display:grid;place-items:center;border-radius:8px;background:#edf5fb;color:var(--blue);font-size:12px;font-weight:900;margin-bottom:18px}.card h3{font-size:19px;color:var(--navy);margin-bottom:8px}.card p{font-size:14px;color:var(--muted)}
+.alt{background:var(--bg)}
+.why{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}.why h2{font-size:39px;line-height:1.15;color:var(--navy);margin:9px 0 15px}.why>div>p{color:var(--muted);margin-bottom:25px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:13px}.feature{background:#fff;border:1px solid var(--line);padding:17px;border-radius:8px}.feature b{display:block;color:var(--navy);font-size:14px}.feature span{font-size:12px;color:var(--muted)}
+.profiles{display:grid;grid-template-columns:1fr 1fr;gap:22px}.profile{padding:32px;border:1px solid var(--line);border-radius:12px;background:#fff}.profile .initial{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--gold);font-weight:800;margin-bottom:18px}.profile h3{font-size:23px;color:var(--navy)}.role{font-size:12px;color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin:4px 0 16px}.profile p{font-size:14px;color:var(--muted);margin-top:8px}
+.expertise{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.expert{padding:20px;border:1px solid var(--line);background:#fff;border-radius:8px;text-align:center}.expert strong{display:block;color:var(--navy);font-size:14px}.expert span{font-size:11px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{padding:25px;border-top:2px solid var(--gold);background:#fff}.step .num{font-size:27px;font-weight:900;color:var(--gold);margin-bottom:7px}.step h3{font-size:17px;color:var(--navy);margin-bottom:5px}.step p{font-size:13px;color:var(--muted)}
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project{height:210px;border-radius:10px;background:linear-gradient(135deg,#0b2235,#1b5d87);color:#fff;padding:25px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}.project:before{content:"";position:absolute;right:-35px;top:-35px;width:150px;height:150px;border:1px solid #ffffff25;transform:rotate(20deg)}.project span{font-size:10px;color:var(--gold);letter-spacing:1.5px;font-weight:800}.project h3{font-size:21px;position:relative}.project p{font-size:12px;color:#d2e0ea;position:relative}
+.cta{background:var(--navy);color:#fff;border-radius:14px;padding:45px 48px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:31px;line-height:1.2}.cta p{color:#c6d5df;margin-top:7px}
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px}.contact-box{background:var(--navy);color:#fff;padding:32px;border-radius:12px}.contact-box h3{font-size:26px;margin-bottom:12px}.contact-box p{font-size:14px;color:#c8d6df;margin:15px 0}.contact-box b{color:#fff}form{display:grid;grid-template-columns:1fr 1fr;gap:14px}input,select,textarea{width:100%;border:1px solid #dce3e8;border-radius:7px;padding:13px;font:inherit;color:var(--text);background:#fff}textarea{min-height:135px;resize:vertical}.full{grid-column:1/-1}.file-note{font-size:12px;color:var(--muted);margin-top:-5px}
+footer{background:#061520;color:#a9bac6;padding:34px 0}.foot{display:flex;justify-content:space-between;gap:20px;font-size:12px}.foot b{color:#fff}.whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;padding:12px 18px;border-radius:28px;font-weight:800;box-shadow:0 8px 25px #0004;z-index:60;font-size:13px}
+@media(max-width:900px){nav{display:none}.hero-grid,.why,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.expertise{grid-template-columns:1fr 1fr}h1{font-size:46px}.hero-panel{max-width:600px}}
+@media(max-width:580px){section{padding:65px 0}.grid,.profiles,.portfolio,.steps,.expertise,.features,form{grid-template-columns:1fr}.full{grid-column:auto}.hero{padding:75px 0}.hero-grid{gap:40px}h1{font-size:38px}.section-head h2,.why h2{font-size:31px}.cta{display:block;padding:32px}.cta .btn{margin-top:20px}.foot{display:block}.foot div+div{margin-top:8px}}
+
+.calculator{max-width:850px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px;box-shadow:0 18px 45px #0a1d2d10}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.calc-field label{display:block;font-size:12px;font-weight:800;color:var(--navy);margin-bottom:7px;text-transform:uppercase;letter-spacing:.7px}
+.calc-result{margin-top:20px;background:var(--navy);color:#fff;border-radius:10px;padding:22px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.calc-result small{color:#b9cbd6}.calc-result strong{font-size:28px;color:var(--gold);display:block}.calc-note{text-align:center;color:var(--muted);font-size:12px;margin-top:12px}
+@media(max-width:580px){.calc-grid{grid-template-columns:1fr}.calc-result{display:block}.calc-result strong{margin-top:5px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<a class="logo" href="#home">Vinayak <span>Engineers</span><small>& CONSULTANTS</small></a>
+<nav><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#calculator">Cost Calculator</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="#contact">Request a Quote</a>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="kicker">CIVIL ENGINEERING • QS • CONSULTANCY</div>
+<h1>Engineering Excellence. From Design to Execution.</h1>
+<p>Complete construction engineering and consultancy services covering drawings, interior layouts, quantity surveying, BOQ, estimation, billing, material reconciliation, BBS and project planning.</p>
+<div class="actions"><a class="btn" href="#services">Explore Services</a><a class="btn outline" href="#contact">Request a Quote</a></div>
+</div>
+<div class="hero-panel">
+<div class="panel-title">Professional Expertise</div>
+<div class="stats">
+<div class="stat"><strong>15+</strong><span>Years Experience — Each Professional</span></div>
+<div class="stat"><strong>09</strong><span>Core Service Areas</span></div>
+<div class="stat"><strong>QS</strong><span>Quantity & Cost Management</span></div>
+<div class="stat"><strong>BBS</strong><span>Reinforcement Scheduling</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-head"><div class="eyebrow">What We Do</div><h2>Complete Construction Engineering & Consultancy</h2><p>From planning and design to quantities, billing, approvals and valuation — practical technical support under one roof.</p></div>
+
+<div class="grid">
+<div class="card"><div class="icon">01</div><h3>Building Planning & Drawings</h3><p>Building plans, working drawings, construction drawings and AutoCAD drafting for residential and commercial projects.</p></div>
+<div class="card"><div class="icon">02</div><h3>Structural Drawings</h3><p>Structural detailing and technical drawings based on project requirements and structural engineering principles.</p></div>
+<div class="card"><div class="icon">03</div><h3>Interior Design & Layout</h3><p>Room layouts, furniture planning, space utilization and practical interior drawings.</p></div>
+<div class="card"><div class="icon">04</div><h3>3D Elevation</h3><p>Modern 3D exterior elevation concepts to visualize the proposed building appearance before execution.</p></div>
+<div class="card"><div class="icon">05</div><h3>Site Visits</h3><p>Technical site visits for measurements, progress review, construction observations and consultancy.</p></div>
+<div class="card"><div class="icon">06</div><h3>Quantity Surveying</h3><p>Detailed quantity takeoff and measurement for civil, structural and finishing works.</p></div>
+<div class="card"><div class="icon">07</div><h3>BOQ & Estimation</h3><p>BOQ preparation, rate analysis, detailed estimation and project cost calculations.</p></div>
+<div class="card"><div class="icon">08</div><h3>Billing & Measurement</h3><p>RA bills, measurement sheets, contractor billing, client billing and quantity verification.</p></div>
+<div class="card"><div class="icon">09</div><h3>Material Reconciliation</h3><p>Cement, steel, concrete and other material consumption, reconciliation and wastage analysis.</p></div>
+<div class="card"><div class="icon">10</div><h3>Bar Bending Schedule</h3><p>Reinforcement quantity calculations and BBS preparation for structural elements.</p></div>
+<div class="card"><div class="icon">11</div><h3>Project Planning</h3><p>Primavera P6, MS Project, work schedules, resource planning and progress monitoring.</p></div>
+<div class="card"><div class="icon">12</div><h3>DPR & Technical Reports</h3><p>Detailed project reports, material statements, cost reports and construction documentation.</p></div>
+<div class="card"><div class="icon">13</div><h3>Property Valuation</h3><p>Technical property and building valuation services for different professional and documentation requirements.</p></div>
+<div class="card"><div class="icon">14</div><h3>Bank Loan Valuation</h3><p>Property valuation and technical assessment support for bank loan and related documentation requirements.</p></div>
+<div class="card"><div class="icon">15</div><h3>Fire Approval Drawings</h3><p>Preparation and coordination of drawings and documentation required for fire approval processes.</p></div>
+<div class="card"><div class="icon">16</div><h3>Authority Approval Support</h3><p>Drawing and documentation support for Zila Panchayat, municipal and other local authority approval processes.</p></div>
+<div class="card"><div class="icon">17</div><h3>Building Plan Approval</h3><p>Building plan preparation and submission support for applicable local authority approval requirements.</p></div>
+<div class="card"><div class="icon">18</div><h3>Existing / As-Built Drawings</h3><p>Existing building measurement, as-built drawings and technical documentation for renovation or approval needs.</p></div>
+</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="container why">
+<div><div class="eyebrow">Why Vinayak Engineers</div><h2>Technical knowledge backed by practical experience.</h2><p>We combine engineering education with extensive construction-sector experience to deliver clear, accurate and usable project documentation.</p><a class="btn dark" href="#about">Meet Our Team</a></div>
+<div class="features">
+<div class="feature"><b>15+ Years Experience</b><span>Individual professional experience</span></div>
+<div class="feature"><b>Engineering Expertise</b><span>Structural engineering background</span></div>
+<div class="feature"><b>Accurate Quantities</b><span>Detailed measurement & takeoff</span></div>
+<div class="feature"><b>Cost Control</b><span>BOQ, estimation & reconciliation</span></div>
+<div class="feature"><b>Professional Documentation</b><span>Clear project deliverables</span></div>
+<div class="feature"><b>Practical Approach</b><span>Built around real project requirements</span></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="section-head"><div class="eyebrow">About Us</div><h2>Two Engineers. One Professional Vision.</h2><p>Vinayak Engineers & Consultants brings together engineering expertise, construction experience, quantity management, valuation and technical consultancy.</p></div>
+<div class="profiles">
+<div class="profile"><div class="initial">SS</div><h3>Sanjay Singh</h3><div class="role">Engineering • QS • Billing • Planning</div><p><b>M.Tech (Structural Engineering)</b></p><p>AMIE • Chartered Engineer</p><p>Certified User of Autodesk (AutoCAD)</p><p><b>15 Years Experience</b></p><p>Expertise in building and structural drawings, quantity surveying, BOQ, estimation, billing, material reconciliation, BBS, project planning, AutoCAD and construction documentation.</p></div>
+<div class="profile"><div class="initial">SKS</div><h3>Sumit Kumar Singh</h3><div class="role">Structural Engineering • Valuation • Approvals</div><p><b>M.Tech (Structural Engineering)</b></p><p>Registered Valuer</p><p><b>15 Years Experience</b></p><p>Expertise in property and bank-loan valuation, technical assessment, building approvals, fire approval drawings, Zila Panchayat and local authority approval documentation and technical consultancy.</p></div>
+</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Our Expertise</div><h2>Technical Services Across the Project Lifecycle</h2><p>Design, quantities, cost, documentation, approvals and planning — coordinated around your project requirements.</p></div>
+<div class="expertise">
+<div class="expert"><strong>DRAWING</strong><span>Plans & AutoCAD</span></div>
+<div class="expert"><strong>STRUCTURAL</strong><span>Engineering Drawings</span></div>
+<div class="expert"><strong>INTERIOR</strong><span>Layouts & Space Planning</span></div>
+<div class="expert"><strong>3D ELEVATION</strong><span>Exterior Visualization</span></div>
+<div class="expert"><strong>QS</strong><span>Quantity Takeoff</span></div>
+<div class="expert"><strong>BOQ</strong><span>Detailed Quantities</span></div>
+<div class="expert"><strong>ESTIMATION</strong><span>Costing & Rates</span></div>
+<div class="expert"><strong>BILLING</strong><span>Measurement & RA Bills</span></div>
+<div class="expert"><strong>RECONCILIATION</strong><span>Material Control</span></div>
+<div class="expert"><strong>BBS</strong><span>Steel Scheduling</span></div>
+<div class="expert"><strong>PLANNING</strong><span>Schedules & Tracking</span></div>
+<div class="expert"><strong>VALUATION</strong><span>Property & Bank Loan</span></div>
+<div class="expert"><strong>APPROVALS</strong><span>Fire & Local Authorities</span></div>
+<div class="expert"><strong>SITE VISITS</strong><span>Technical Review</span></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-head"><div class="eyebrow">Our Process</div><h2>Simple. Clear. Professional.</h2></div>
+<div class="steps">
+<div class="step"><div class="num">01</div><h3>Requirement</h3><p>Understand the project, drawings and required deliverables.</p></div>
+<div class="step"><div class="num">02</div><h3>Review</h3><p>Review drawings, quantities, scope and technical requirements.</p></div>
+<div class="step"><div class="num">03</div><h3>Execution</h3><p>Prepare drawings, quantities, BOQ, bills, schedules or reports.</p></div>
+<div class="step"><div class="num">04</div><h3>Delivery</h3><p>Provide clear, organized and client-ready deliverables.</p></div>
+</div>
+</div>
+</section>
+
+
+<section id="calculator">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Quick Estimate</div><h2>Construction Cost Calculator</h2><p>Enter your covered area, number of floors and building category to get an approximate construction cost.</p></div>
+<div class="calculator">
+<div class="calc-grid">
+<div class="calc-field">
+<label for="area">Covered Area (sq.ft.)</label>
+<input id="area" type="number" min="1" step="1" placeholder="e.g. 1500">
+</div>
+<div class="calc-field">
+<label for="floors">No. of Floors</label>
+<input id="floors" type="number" min="1" step="1" value="1" placeholder="e.g. 2">
+</div>
+<div class="calc-field" style="grid-column:1/-1">
+<label for="category">Building Category</label>
+<select id="category">
+<option value="1600">Normal</option>
+<option value="2500">Semi Luxury</option>
+<option value="4000">Luxury</option>
+</select>
+</div>
+</div>
+<div class="calc-result">
+<div><small>Approximate Construction Cost</small><strong id="cost">₹0</strong></div>
+<div><small>Total Construction Area</small><strong id="totalArea">0 sq.ft.</strong></div>
+</div>
+<div class="calc-note">Indicative estimate only. Actual project cost may vary based on design, specifications, materials, location, site conditions, structure, finishes and scope of work.</div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="alt">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Portfolio</div><h2>Selected Project Categories</h2><p>Actual project photographs and case studies can be added here later.</p></div>
+<div class="portfolio">
+<div class="project"><span>RESIDENTIAL</span><h3>Building Design & Quantity</h3><p>Plans, quantities, BOQ and estimation</p></div>
+<div class="project"><span>COMMERCIAL</span><h3>QS & Billing Support</h3><p>Measurement, billing and reconciliation</p></div>
+<div class="project"><span>PLANNING</span><h3>Construction Planning</h3><p>Schedules, resources and progress tracking</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Get In Touch</div><h2>Let's Discuss Your Project</h2><p>Share your requirement or drawing and we can discuss the scope of work.</p></div>
+<div class="contact">
+<div class="contact-box"><h3>Vinayak Engineers & Consultants</h3><p>Professional Civil Engineering, Quantity Surveying, Billing, Estimation and Project Planning services.</p><p><b>Phone / WhatsApp</b><br>9784444469</p><p><b>Email</b><br>vengineer@gmail.com</p><p><b>Location</b><br>Etawah, Uttar Pradesh</p></div>
+<form onsubmit="event.preventDefault();alert('Thank you. The enquiry form is ready to be connected to email, WhatsApp or a backend.');">
+<input placeholder="Your Name" required><input placeholder="Mobile / WhatsApp" required>
+<input type="email" placeholder="Email"><select><option>Select Service</option><option>Drawing & Design</option><option>Interior Design</option><option>Quantity Surveying</option><option>BOQ & Estimation</option><option>Billing</option><option>Material Reconciliation</option><option>BBS</option><option>Project Planning</option><option>DPR & Reports</option></select>
+<textarea class="full" placeholder="Tell us about your project / requirement"></textarea>
+<input class="full" type="file" accept=".pdf,.dwg,.dxf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png">
+<div class="file-note full">You can select a drawing or project document. Actual file submission will be connected in the next step.</div>
+<button class="btn dark full" type="submit">Submit Enquiry</button>
+</form>
+</div>
+</div>
+</section>
+
+<section style="padding-top:0"><div class="container"><div class="cta"><div><h2>Have a drawing or BOQ requirement?</h2><p>Start a conversation with Vinayak Engineers & Consultants.</p></div><a class="btn" href="#contact">Request a Quote</a></div></div></section>
+
+<footer><div class="container foot"><div>© 2026 <b>Vinayak Engineers & Consultants</b>. All rights reserved.</div><div>Drawing • QS • Billing • Valuation • Approvals • Planning</div></div></footer>
+<a class="whatsapp" href="https://wa.me/919784444469" target="_blank">WhatsApp Us</a>
+
+<script>
+const areaInput = document.getElementById('area');
+const floorsInput = document.getElementById('floors');
+const categoryInput = document.getElementById('category');
+const costOutput = document.getElementById('cost');
+const totalAreaOutput = document.getElementById('totalArea');
+
+function updateEstimate(){
+  const area = parseFloat(areaInput.value) || 0;
+  const floors = parseFloat(floorsInput.value) || 0;
+  const rate = parseFloat(categoryInput.value) || 0;
+  const totalArea = area * floors;
+  const total = totalArea * rate;
+  costOutput.textContent = '₹' + total.toLocaleString('en-IN');
+  totalAreaOutput.textContent = totalArea.toLocaleString('en-IN') + ' sq.ft.';
+}
+areaInput.addEventListener('input', updateEstimate);
+floorsInput.addEventListener('input', updateEstimate);
+categoryInput.addEventListener('change', updateEstimate);
+updateEstimate();
+</script>
+</body>
+</html>
